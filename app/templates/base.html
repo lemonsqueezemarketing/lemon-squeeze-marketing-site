@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Lemon Squeeze Marketing{% endblock %}</title>
+    <meta name="description" content="Lemon Squeeze Marketing offers affordable SEO services for small business owners. From SEO consulting to technical SEO services, we help you get found online." />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    {% block extra_css %}{% endblock %}
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Lemon Squeeze Marketing",
+      "image": "{{ url_for('static', filename='images/lsm_hero_img_org.png') }}",
+      "description": "Affordable SEO Services and Local SEO Services for Small Business. Lemon Squeeze Marketing helps small businesses grow online through SEO consulting, technical SEO, and SEO copywriting.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "addressCountry": "US"
+      },
+      "url": "https://www.lemonsqueeze-marketing.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Axander Wilson"
+      },
+      "telephone": "+1-555-123-4567"
+    }
+    </script>
+</head>
+<body>
+
+    {% include 'partials/nav.html' %}
+
+    {% block content %}{% endblock %}
+
+    {% include 'partials/footer.html' %}
+
+    <!-- Base JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

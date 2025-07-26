@@ -1,0 +1,23 @@
+<nav class="navbar">
+    <div class="container">
+        <a href="{{ url_for('main.home') }}" class="logo">Lemon Squeeze Marketing</a>
+
+        <!-- Hamburger Toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+            <span class="bar top-bar"></span>
+            <span class="bar middle-bar"></span>
+            <span class="bar bottom-bar"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navMenu">
+            <li><a href="{{ url_for('main.home') }}">Home</a></li>
+            <li><a href="{{ url_for('main.blog') }}">Blog</a></li>
+            <li><a href="{{ url_for('main.services') }}">Services</a></li>
+            <li><a href="{{ url_for('main.pricing') }}">Pricing</a></li>
+            <li><a href="{{ url_for('main.contact') }}">Contact</a></li>
+            <li><a href="{{ url_for('main.schedule_call') }}">Schedule Call</a></li>
+            <li><a href="{{ url_for('main.campaign') }}">Campaign</a></li>
+        </ul>
+    </div>
+</nav>
