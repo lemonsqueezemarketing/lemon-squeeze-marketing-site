@@ -176,6 +176,12 @@ h1, h2 {
     background-color: #f1f1f1;
 }
 
+
+/* Hire us CTA - brand black */
+.btn-cta-hire-us {
+    background-color: #1C1C1C;
+    color: #F9F9F9;
+}
 /* Service Highlights */
 .services {
     background-color: #FFFFFF;
@@ -200,6 +206,44 @@ h1, h2 {
     border-radius: 4px;
     font-weight: 600;
 }
+
+/* Who we are section */
+.who-we-are {
+    background-color: #1C1C1C;
+    padding: 4rem 2rem;
+}
+
+.who-we-are-inner {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+
+.who-we-are h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1C1C1C;
+    text-align: center;
+}
+
+.who-we-are-image-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+}
+
+.who-we-are-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+
+
 
 /* Testimonials */
 .testimonials {
@@ -281,6 +325,7 @@ footer nav a:hover {
 
 /* Mobile Nav */
 @media (max-width: 768px) {
+    /* Nav */
     .nav-toggle {
         display: flex;
     }
@@ -302,7 +347,7 @@ footer nav a:hover {
     }
 
     .nav-links.open {
-        max-height: 500px; /* Adjust based on link count */
+        max-height: 500px;
         padding: 1rem 2rem;
     }
 
@@ -327,10 +372,8 @@ footer nav a:hover {
         padding: 1rem 2rem;
         position: relative;
     }
-}
 
-/* Responsive */
-@media (max-width: 768px) {
+    /* Hero */
     .hero h1 {
         font-size: 2.25rem;
     }
@@ -344,9 +387,20 @@ footer nav a:hover {
         align-items: flex-start;
     }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
+    /* Who We Are */
+    .who-we-are-inner {
+        padding: 1.5rem;
+    }
+
+    .who-we-are-image-container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .who-we-are-image {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 }
+
